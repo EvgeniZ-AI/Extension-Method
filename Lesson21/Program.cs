@@ -15,6 +15,18 @@ namespace Lesson21
 
             int Energy = coalFuel.isCoal();
             Console.WriteLine($"Получится {Energy} кВт-ч ");
+
+            var deliveres = new List<amountOfCoal>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                var dev = new amountOfCoal();
+                dev.createRandomDeliveris(100, 10000);
+                deliveres.Add(dev);
+            }
+
+            var devName = deliveres.ConvertToString();
+            Console.WriteLine(devName);
         }
     }
 }
