@@ -15,7 +15,7 @@ namespace Lesson21
 
             foreach (var item in collection)
             {
-                result += item.ToString() + ", ";
+                result += item.ToString() + ",\t\n ";
             }
 
             return result;

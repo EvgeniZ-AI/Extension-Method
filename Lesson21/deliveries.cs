@@ -10,7 +10,7 @@ namespace Lesson21
     {
         public static amountOfCoal createRandomDeliveris(this amountOfCoal amountCoal, int min,int max)
         {
-            var rnd = new Random(DateTime.Now.Millisecond);
+            var rnd = new Random(Guid.NewGuid().ToByteArray().Sum(x => x));
             amountCoal.num = "№" + rnd.Next(1, 250);
             amountCoal.amount = rnd.Next(min, max);
 
