@@ -13,7 +13,8 @@ namespace Lesson21
             Console.WriteLine("Введите колличество угля");
             int coalFuel = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Получится {coalFuel.isCoal()} кВт-ч ");
+            int Energy = coalFuel.isCoal();
+            Console.WriteLine($"Получится {Energy} кВт-ч ");
         }
     }
 }
