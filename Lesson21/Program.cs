@@ -28,6 +28,11 @@ namespace Lesson21
             var devName = deliveres.ConvertToString(); // конвертирую всю коллекцию в строку
             Console.WriteLine(devName); // Вывожу её в консоль
 
+            var lastDelivery = new amountOfCoal();
+            lastDelivery.createRandomDeliveris(100, 10000);
+
+            Console.WriteLine($"{lastDelivery.ToString()} Энергия в поставке - {lastDelivery.isCoal()} кВт-ч");
+
 
         }
     }
