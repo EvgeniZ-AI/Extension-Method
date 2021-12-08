@@ -9,5 +9,9 @@ namespace Lesson21
         {
             return i * 7 ; //энергия в кВт-ч
         }
+         public static int isCoal(this amountOfCoal coal)
+        {
+            return coal.amount * 7;
+        }
     }
 }

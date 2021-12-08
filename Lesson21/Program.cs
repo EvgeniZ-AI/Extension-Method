@@ -16,17 +16,19 @@ namespace Lesson21
             int Energy = coalFuel.isCoal();
             Console.WriteLine($"Получится {Energy} кВт-ч ");
 
-            var deliveres = new List<amountOfCoal>();
+            var deliveres = new List<amountOfCoal>();//Создаю коллекцию обьектов поставок угля
 
             for (int i = 0; i < 10; i++)
             {
-                var dev = new amountOfCoal();
-                dev.createRandomDeliveris(100, 10000);
-                deliveres.Add(dev);
+                var dev = new amountOfCoal();// обьявляю новый обьект поставок угля
+                dev.createRandomDeliveris(100, 10000);// заполняю данные поставок угля
+                deliveres.Add(dev);// добовляю обьект поставок угля в коллекцию
             }
 
-            var devName = deliveres.ConvertToString();
-            Console.WriteLine(devName);
+            var devName = deliveres.ConvertToString(); // конвертирую всю коллекцию в строку
+            Console.WriteLine(devName); // Вывожу её в консоль
+
+
         }
     }
 }
