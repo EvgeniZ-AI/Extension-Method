@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ClassLibraryGas;
 
 namespace Lesson21
 {
@@ -30,8 +28,12 @@ namespace Lesson21
 
             var lastDelivery = new amountOfCoal();
             lastDelivery.createRandomDeliveris(100, 10000);
-
             Console.WriteLine($"{lastDelivery.ToString()} Энергия в поставке - {lastDelivery.isCoal()} кВт-ч");
+
+            var gasDelivery = new GasDelivery();
+            gasDelivery.createRandomDeliveris(100, 10000);
+            Console.WriteLine($"{gasDelivery.ToString()} Энергии в поставке - {gasDelivery.isGas()} кВт-ч");
+            
         }
     }
 }

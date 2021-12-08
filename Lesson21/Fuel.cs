@@ -1,4 +1,5 @@
 ﻿using System;
+using ClassLibraryGas;
 
 
 namespace Lesson21
@@ -12,6 +13,10 @@ namespace Lesson21
          public static int isCoal(this amountOfCoal coal)
         {
             return coal.amount * 7;
+        }
+        public static int isGas(this GasDelivery gas)
+        {
+            return gas.amout * 10;
         }
     }
 }
